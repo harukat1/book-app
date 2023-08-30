@@ -20,32 +20,14 @@
                             </tr>
                         </thead>
                         <tbody class="text-center">
-                            <!-- @foreach ($bookshelf as $book)
+                            @foreach ($bookshelf as $book)
                                 <tr>
                                     <td>{{ $book->count() }}　冊</td>
                                     <td>B</td>
                                 </tr>
-                            @endforeach  -->
-
-
-                            @isset($bookshelf)
-                            @if (!$book->isEmpty())
-                            <tr>
-                                <td>
-                                    {{ $book->count() }} 冊
-                                </td>
-                            </tr>
-                            @else
-                            <tr>
-                                <td>
-                                    0 冊
-                                </td>
-                            </tr>
-                            @endisset
-                            @endif
+                            @endforeach 
                         </tbody>
                     </table>
-
                 </div>
             </div>
         </div>
